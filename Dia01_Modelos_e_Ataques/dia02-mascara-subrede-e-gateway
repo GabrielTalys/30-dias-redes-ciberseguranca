@@ -1,0 +1,79 @@
+# 📡 Estudo de Redes para Cibersegurança – Parte 1 a 5
+
+Este repositório documenta meus estudos sobre redes, com foco em fundamentos essenciais para a área de **cibersegurança**.
+
+✅ Parte 1 – Conceitos de IP e Sub-redes  
+✅ Parte 2 – Máscara de Sub-rede  
+✅ Parte 3 – Gateway e Roteamento Básico  
+✅ Parte 4 – Sub-redes (Subnetting)  
+✅ Parte 5 – Cálculos de Sub-rede
+
+---
+
+## 🔹 Parte 1: Conceitos de IP e Sub-redes
+
+- Um **endereço IP** é um identificador único para um dispositivo na rede.
+- Endereços IP podem ser:
+  - IPv4 (ex: 192.168.1.1)
+  - IPv6 (ex: 2001:0db8:85a3::8a2e:0370:7334)
+- Diferença entre **IP público** (visível na internet) e **IP privado** (usado em redes locais)
+- **Classes de IP**:
+  - Classe A: 1.0.0.0 – 126.255.255.255
+  - Classe B: 128.0.0.0 – 191.255.255.255
+  - Classe C: 192.0.0.0 – 223.255.255.255
+- Introdução ao conceito de **CIDR** (ex: /24, /26)
+
+---
+
+## 🔹 Parte 2: Máscara de Sub-rede
+
+- Define qual parte do IP é a rede e qual é o host.
+- Máscaras comuns:
+  - 255.255.255.0 → /24
+  - 255.255.255.192 → /26
+- Exemplo:  
+  IP: `192.168.1.10`  
+  Máscara: `255.255.255.0` → Rede: `192.168.1.0`
+
+---
+
+## 🔹 Parte 3: Gateway e Roteamento
+
+- O **gateway** é o "porta de saída" da rede local para a internet.
+- Geralmente é o IP do roteador (ex: `192.168.1.1`)
+- Importância da relação entre IP, máscara e gateway para o roteamento
+
+---
+
+## 🔹 Parte 4: Sub-redes (Subnetting)
+
+- Subnetting divide uma rede maior em redes menores.
+- Aumenta organização e segurança.
+- Exemplo com rede `192.168.1.0/24`:
+  - Sub-rede 1: `192.168.1.0 – 63`
+  - Sub-rede 2: `192.168.1.64 – 127`
+  - Sub-rede 3: `192.168.1.128 – 191`
+  - Sub-rede 4: `192.168.1.192 – 255`
+
+---
+
+## 🔹 Parte 5: Cálculos de Sub-rede
+
+### Fórmulas:
+- Hosts por sub-rede: `2^n - 2`
+- Sub-redes possíveis: `2^n`
+
+### Exemplo com /26:
+- Bloco: 64 IPs
+- Hosts válidos: 62
+- Endereço de rede: `192.168.1.64`
+- Broadcast: `192.168.1.127`
+
+---
+
+## ✏️ Aprendizado contínuo
+
+Esses estudos fazem parte do meu plano de transição para a área de **cibersegurança**.  
+Estou focando primeiro em redes, depois em Linux, protocolos e defesa prática.
+
+📌 Repositório em constante atualização.
